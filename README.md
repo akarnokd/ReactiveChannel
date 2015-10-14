@@ -1,17 +1,10 @@
-reactive-streams-impl
+ReactiveChannels
 ==============
 
-Non-fluent operators to work with org.reactivestreams interfaces.
-
-Compilation and use (currently) requires Java 8 due to heavy lambda usage.
-
-Implementation notes
---------------
-
-The implementation uses non-blocking concurrency primitives such as [queue-drain serialization](http://akarnokd.blogspot.hu/2015/05/operator-concurrency-primitives_11.html), non-blocking queues and
-copy-on-write data structures.
+I'm exploring the world of request-response like, bi-directional reactive publisher-subscribers plus
+backpressure within memory or over a network boundary.
 
 Releases
 --------
 
-<a href='https://travis-ci.org/akarnokd/reactive-streams-impl/builds'><img src='https://travis-ci.org/akarnokd/reactive-streams-impl.svg?branch=master'></a>
+<a href='https://travis-ci.org/akarnokd/reactive-streams-impl/builds'><img src='https://travis-ci.org/akarnokd/ReactiveChannel.svg?branch=master'></a>
