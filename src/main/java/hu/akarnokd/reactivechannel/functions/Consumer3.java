@@ -14,22 +14,21 @@
  * limitations under the License.
  */
 
-package hu.akarnokd.reactivechannel;
+package hu.akarnokd.reactivechannel.functions;
 /**
- * The client of a ChannelPublisher which receives a ChannelConnection or
- * a terminal event.
- * 
- * <p>Event pattern:<br/>
- * onConnect (onError|onComplete)?
+ * Represents a consumer with three arguments.
  *
- * @param <Request> the request type
- * @param <Response> the response type
+ * @param <T1> the first argument type
+ * @param <T2> the second argument type
+ * @param <T3> the thrird argument type
  */
-public interface ChannelSubscriber<Request, Response> extends ChannelTerminalEvents {
+@FunctionalInterface
+public interface Consumer3<T1, T2, T3> {
     /**
-     * Called by the ChannelPublisher to set up the connection between itself
-     * and the ChannelSubscriber instance.
-     * @param conn the channel connection, not null
+     * Applies a computation to the given arguments.
+     * @param t1 the first argument
+     * @param t2 the second argument
+     * @param t3 the third argument
      */
-    void onConnect(ChannelConnection<Request, Response> conn);
+    void accept(T1 t1, T2 t2, T3 t3);
 }

@@ -69,7 +69,7 @@ artifacts {
 
 jar {
     manifest {
-        name = 'reactive-streams-impl'
+        name = 'reactive-channel'
         instruction 'Bundle-Vendor', 'akarnokd'
         instruction 'Bundle-DocURL', 'https://github.com/akarnokd/ReactiveChannel'
         instruction 'Import-Package', '!org.junit,!junit.framework,!org.mockito.*,*'
