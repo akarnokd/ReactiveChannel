@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package hu.akarnokd.reactivechannel;
+package hu.akarnokd.reactivechannel.functions;
 /**
  * Represents a consumer with three arguments.
  *
