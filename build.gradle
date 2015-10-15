@@ -22,7 +22,7 @@ targetCompatibility = '1.8'
 sourceCompatibility = '1.8'
 
 group = "com.github.akarnokd" 
-ext.githubProjectName = 'reactive-streams-impl'
+ext.githubProjectName = 'reactive-channel'
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
